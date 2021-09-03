@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --violet: hsl(257, 40%, 49%);
+  --magenta: hsl(300, 69%, 71%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  max-width: 375px;
+  margin: auto;
+}
+
+.container {
+  width: 100%;
+  background-color: var(--violet);
+  background-image: url(../images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  /* background-size: contain; */
+  background-position: top right;
+  padding: 3rem 4rem;
+}
+
+.main-header {
+  width: 100%;
+  display: flex;
+}
+
+.header-logo {
+  width: 10rem;
+}
+
+.component {
+  display: flex;
+  flex-direction: column;
+  margin: 7.4rem 0 3rem 0;
+  gap: 5rem;
+  text-align: center;
+  /* background-color: ; */
+}
+
+.mockup {
+  width: 100%;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  color: white;
+}
+
+.component-heading {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.component-desc {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.55rem;
+  font-weight: 400;
+}
+
+.register-btn {
+  width: 70%;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: var(--violet);
+  background-color: white;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  margin-top: 2rem;
+  box-shadow: 0 0.3rem 1rem 0 rgba(0, 0, 0, 0.438);
+}
+
+.register-btn:hover {
+  background-color: var(--magenta);
+  color: white;
+  cursor: pointer;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.circle {
+  display: flex;
+  width: 3rem;
+  height: 3rem;
+  align-items: center;
+  justify-content: center;
+  border: 0.18rem solid white;
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+  /* padding: 0.5rem; */
+}
+
+.circle:hover {
+  color: var(--magenta);
+  border-color: var(--magenta);
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 400px) {
+  body {
+    max-width: 420px;
+  }
+}
+
+@media (min-width: 700px) {
+  body {
+    max-width: 768px;
+  }
+  .container {
+    background-color: var(--violet);
+    background-image: url(../images/bg-desktop.svg);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3rem 4rem 1.5rem 4rem;
+  }
+  .component {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 60fr 40fr;
+    column-gap: 4rem;
+    margin: 0;
+    margin: 7.4rem 0 3rem 0;
+    /* text-align: center; */
+    /* background-color: ; */
+  }
+
+  .mockup {
+    grid-column: 1 / 2;
+  }
+
+  .detail {
+    grid-column: 2 / -1;
+    width: 100%;
+    text-align: left;
+    align-items: flex-start;
+    margin-top: 2rem;
+    /* justify-content: center; */
+    gap: 1rem;
+  }
+  .component-heading {
+    font-size: 2rem;
+  }
+  .component-desc {
+    font-size: 0.9rem;
+  }
+  .register-btn {
+    width: auto;
+    font-size: 1.1rem;
+    padding: 0.8rem 4rem;
+    margin-top: 0rem;
+  }
+  .social-media {
+    grid-column: 2 / -1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 1299px) {
+  body {
+    max-width: 1366px;
+  }
+  .container {
+    background-color: var(--violet);
+    background-image: url(../images/bg-desktop.svg);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 4rem 6rem 0rem 6rem;
+  }
+
+  .header-logo {
+    width: 20rem;
+  }
+  .component {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 55fr 45fr;
+    column-gap: 6rem;
+    margin: 0;
+    margin: 7.4rem 0 3rem 0;
+    /* text-align: center; */
+    /* background-color: ; */
+  }
+
+  .mockup {
+      /* width: 90%; */
+    grid-column: 1 / 2;
+  }
+
+  .detail {
+    grid-column: 2 / -1;
+    width: 100%;
+    text-align: left;
+    align-items: flex-start;
+    margin-top: 2rem;
+    /* justify-content: center; */
+    gap: 2rem;
+  }
+  .component-heading {
+    font-size: 4rem;
+  }
+  .component-desc {
+    font-size: 1.85rem;
+  }
+  .register-btn {
+    width: auto;
+    font-size: 1.85rem;
+    padding: 1rem 6.5rem;
+    margin-top: 1rem;
+    font-weight: 400;
+  }
+  .social-media {
+    grid-column: 2 / -1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 2rem;
+    margin-top: -5rem;
+  }
+
+  .circle {
+    display: flex;
+    width: 4rem;
+    height: 4rem;
+    align-items: center;
+    justify-content: center;
+    border: 0.2rem solid white;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    /* padding: 0.5rem; */
+  }
+  .size {
+      font-size: 2rem !important;
+  }
+  
+}
+
+@media (min-width: 1400px) {
+    body {
+      max-width: 1440px;
+    }
+    .container {
+      background-color: var(--violet);
+      background-image: url(../images/bg-desktop.svg);
+      background-position: top left;
+      background-repeat: no-repeat;
+      background-size: contain;
+      padding: 4rem 7rem 0rem 7rem;
+    }
+  
+    .header-logo {
+      width: 20rem;
+    }
+    .component {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 55fr 45fr;
+      column-gap: 6rem;
+      margin: 0;
+      margin: 8rem 0 3rem 0;
+      /* text-align: center; */
+      /* background-color: ; */
+    }
+  
+    .mockup {
+      grid-column: 1 / 2;
+    }
+  
+    .detail {
+      grid-column: 2 / -1;
+      width: 100%;
+      text-align: left;
+      align-items: flex-start;
+      margin-top: 5rem;
+      /* justify-content: center; */
+      gap: 2rem;
+    }
+    .component-heading {
+      font-size: 4rem;
+      padding: 0 2rem 0 0;
+    }
+    .component-desc {
+      font-size: 1.95rem;
+    }
+    .register-btn {
+      width: auto;
+      font-size: 1.85rem;
+      padding: 1.5rem 6.5rem;
+      border-radius: 5rem;
+      margin-top: 1rem;
+      font-weight: 400;
+    }
+    .social-media {
+      grid-column: 2 / -1;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      gap: 2rem;
+      margin-top: -4rem;
+    }
+  
+    .circle {
+      display: flex;
+      width: 4rem;
+      height: 4rem;
+      align-items: center;
+      justify-content: center;
+      border: 0.2rem solid white;
+      border-radius: 50%;
+      color: white;
+      text-decoration: none;
+      /* padding: 0.5rem; */
+    }
+    .size {
+        font-size: 2rem !important;
+    }
+    
+  }
+  
