@@ -198,6 +198,7 @@ body {
     background-position: top left;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
     padding: 4rem 6rem 0rem 6rem;
   }
 
